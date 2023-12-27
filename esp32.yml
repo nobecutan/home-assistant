@@ -1,0 +1,29 @@
+esphome:
+  name: rpi-home
+
+esp32:
+  board: az-delivery-devkit-v4
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: ""
+
+ota:
+  password: ""
+
+wifi:
+  ssid: "Geppetto"
+  password: "12ntb3b45m6tbn!"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Rpi-Home Fallback Hotspot"
+    password: "gOSgXAtdPjtz"
+
+captive_portal:
+    
